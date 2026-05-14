@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "cansteinplotclient",
+  "version": "${version}",
+  "name": "CansteinPlotClient",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cansteinplotclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.emilsleeper.cansteinplotclient.client.CansteinplotclientClient"
+    ],
+    "main": [
+      "com.emilsleeper.cansteinplotclient.Cansteinplotclient"
+    ]
+  },
+  "mixins": [
+    "cansteinplotclient.mixins.json",
+    {
+      "config": "cansteinplotclient.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
