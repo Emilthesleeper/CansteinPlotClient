@@ -15,6 +15,9 @@
     ],
     "main": [
       "com.emilsleeper.cansteinplotclient.Cansteinplotclient"
+    ],
+    "modmenu": [
+      "com.emilsleeper.cansteinplotclient.menu.ModMenuImpl"
     ]
   },
   "mixins": [
@@ -27,6 +30,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "modmenu": ">=${modmenu_version}"
   }
 }

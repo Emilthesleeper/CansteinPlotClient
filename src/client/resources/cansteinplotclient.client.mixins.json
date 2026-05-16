@@ -1,9 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.emilsleeper.cansteinplotclient.mixin.client",
+  "package": "com.emilsleeper.cansteinplotclient.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ChatMessageMixin",
+    "PlayerListMixin"
   ],
   "injectors": {
     "defaultRequire": 1
